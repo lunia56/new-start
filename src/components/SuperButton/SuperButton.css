@@ -1,0 +1,72 @@
+/* Общие стили для всех кнопок */
+.button {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Кнопка для светлой темы (белая тема — кнопка черная) */
+.button_theme_white {
+    background-color: #000000;  /* Черный фон */
+    color: white;               /* Белый текст */
+    border: 1px solid #000000;
+}
+
+.button_theme_white:hover {
+    background-color: #222222;  /* Темно-серый при наведении */
+}
+
+/* Кнопка для темной темы (темная тема — кнопка белая) */
+.button_theme_black {
+    background-color: #ffffff;  /* Белый фон */
+    color: black;             /* Черный текст */
+    border: 1px solid #ffffff;
+}
+
+.button_theme_black:hover {
+    background-color: #f0f0f0;  /* Светло-серый при наведении */
+}
+
+
+
+
+
+
+/* Второстепенная кнопка (secondary) для темной темы */
+.button_theme_black.button_isSecondary {
+    background-color: transparent;
+    color: #f3f3f3;
+    border: 1px solid #ffffff;
+}
+
+.button_theme_black.button_isSecondary:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Легкое осветление */
+}
+
+
+/* Второстепенная кнопка (secondary) для светлой темы */
+.button_theme_white.button_isSecondary {
+    background-color: transparent;
+    color: rgba(2, 2, 2, 0.9);
+    border: 1px solid #000000;
+}
+
+.button_theme_white.button_isSecondary:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Легкое затемнение */
+}
+
+
+
+
+
+
+/* Неактивная кнопка */
+.button_disabled {
+    background-color: #f4f3f3;  /* Светло-серый фон */
+    color: #a0a0a0;             /* Серый текст */
+    border: 1px solid #d0d0d0;  /* Светлая рамка */
+    cursor: not-allowed;        /* Курсор не доступен */
+}
