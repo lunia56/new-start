@@ -1,28 +1,29 @@
-import {FC, } from 'react'
-import { cnSuperButton } from './SuperButton.classname';
-import './SuperButton.css';
-import {Theme} from '../../App.tsx'
+import {FC,} from 'react'
+import {cnSuperButton} from './SuperButton.classname'
+import './SuperButton.css'
+import {State, Theme} from '../../App.tsx'
 
 type SuperButtonProps = {
-    title:string,
+    title: string,
     theme: Theme,
-    disabled:boolean,
-    isSecondary:boolean,
+    isSecondary: boolean,
+    state: State,
 }
 
 
+export const SuperButton: FC<SuperButtonProps> = ({title, theme, isSecondary, state}) => {
 
-export const SuperButton:FC<SuperButtonProps> = ({title,theme,isSecondary,disabled}) => {
-
-    const onClickHandle =(event:React.MouseEvent<HTMLButtonElement>)=>{
-        console.log('Hello world'+event)
+    const onClickHandle = () => {
+        console.log('Hello world')
     }
+    const disabled = state === 'disabled'
+    const hovered = state === 'hovered'
 
     return (
         <button
-            className={cnSuperButton({theme,isSecondary,disabled})}
-            onClick={(event)=>onClickHandle(event)}
-            disabled={!disabled}
+            className={cnSuperButton({theme, isSecondary, disabled, hovered})}
+            onClick={() => onClickHandle()}
+            disabled={state === 'disabled'}
         >{title}</button>
     )
 }

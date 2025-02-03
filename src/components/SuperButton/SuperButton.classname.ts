@@ -1,6 +1,5 @@
-import { withNaming} from '@bem-react/classname'
+import {cn} from '../../App.classname.tsx'
 
-const cn = withNaming({ e: "__", m: "_" });
 export const cnSuperButton = cn('button');
 
 
