@@ -1,7 +1,7 @@
 import {FC,} from 'react'
-import {cnSuperButton} from './SuperButton.classname'
+import {cnSuperButton} from './SuperButton.classname.ts'
 import './SuperButton.css'
-import {State, Theme} from '../../App.tsx'
+import {State, Theme} from '../HomeWork1.tsx'
 
 type SuperButtonProps = {
     title: string,
