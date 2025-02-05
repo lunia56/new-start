@@ -1,4 +1,4 @@
-import { withNaming} from '@bem-react/classname'
+import { withNaming } from '@bem-react/classname'
 
 
 
