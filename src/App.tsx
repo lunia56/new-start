@@ -1,13 +1,10 @@
-import './App.css'
+import "./App.css";
+import { CustomButton } from "./homeWork1/CustomButton.tsx";
 
-function App() {
-
+export const App = () => {
   return (
     <>
-
-        <div >hello world</div>
+      <CustomButton />
     </>
-  )
-}
-
-export default App
+  );
+};
