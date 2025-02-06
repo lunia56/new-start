@@ -9,12 +9,14 @@ import {
 export type TSuperButtonTheme = EButtonTheme.WHITE | EButtonTheme.BLACK;
 
 export const CustomButton = () => {
+  const buttonTitle = "Супер Кнопка";
+
   const [theme, setTheme] = useState<TSuperButtonTheme>(EButtonTheme.WHITE);
   const [isSecondary, setIsSecondary] = useState<boolean>(false);
   const [customButtonState, setCustomButtonState] = useState(
     ECustomButtonState.NORMAL,
   );
-  const ButtonTitle = "Супер Кнопка";
+
   useEffect(() => {
     document.body.style.backgroundColor = theme;
     document.body.style.color =
@@ -24,8 +26,10 @@ export const CustomButton = () => {
   const selectHandleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const value = event.currentTarget.value as ECustomButtonState;
     setCustomButtonState(value);
+    console.log();
   };
-  const onChangeInputHandler = () => {
+
+  const handleThemeToggle = () => {
     setTheme(
       theme === EButtonTheme.WHITE ? EButtonTheme.BLACK : EButtonTheme.WHITE,
     );
@@ -34,7 +38,7 @@ export const CustomButton = () => {
     <>
       <div className={cnApp("superButton")}>
         <SuperButton
-          title={ButtonTitle}
+          title={buttonTitle}
           theme={theme}
           isSecondary={isSecondary}
           customButtonState={customButtonState}
@@ -42,28 +46,29 @@ export const CustomButton = () => {
       </div>
       <div className={cnApp("container")}>
         <div className={cnApp("box")}>
-          <label htmlFor="toggle">Dark Theme:</label>
+          <label htmlFor="theme-toggle">Dark Theme:</label>
           <input
             type={"checkbox"}
-            id="toggle"
-            onChange={onChangeInputHandler}
+            id="theme-toggle"
+            onChange={handleThemeToggle}
           />
         </div>
-
         <div className={cnApp("box")}>
-          <label htmlFor="toggle">Secondary:</label>
+          <label htmlFor="secondary-toggle">Secondary:</label>
           <input
             type={"checkbox"}
-            id="toggle"
+            id="secondary-toggle"
             onChange={() => setIsSecondary((prevState) => !prevState)}
           />
         </div>
         <div className={cnApp("box")}>
           <label htmlFor="dropdown">State:</label>
           <select id="dropdown" onChange={selectHandleChange}>
-            <option value="normal">normal</option>
-            <option value="hovered">hovered</option>
-            <option value="disabled">disabled</option>
+            {Object.values(ECustomButtonState).map((state) => (
+              <option key={state} value={state}>
+                {state}
+              </option>
+            ))}
           </select>
         </div>
       </div>
