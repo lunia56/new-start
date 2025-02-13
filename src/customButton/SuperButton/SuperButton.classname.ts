@@ -1,3 +1,3 @@
-import { cn } from "../../App.classname.tsx";
+import { cn } from '../../App.classname.tsx';
 
-export const cnSuperButton = cn("button");
+export const cnSuperButton = cn('button');

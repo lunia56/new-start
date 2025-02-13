@@ -1,9 +1,9 @@
-import { cnSuperButton } from "./SuperButton.classname.ts";
-import "./SuperButton.css";
+import { cnSuperButton } from './SuperButton.classname.ts';
+import './SuperButton.css';
 import {
   ECustomButtonState,
   EButtonTheme,
-} from "../constants/SuperButtonStates.ts";
+} from '../constants/SuperButtonStates.ts';
 
 type TProps = {
   title: string;
@@ -19,7 +19,7 @@ export const SuperButton = ({
   customButtonState,
 }: TProps) => {
   const onClickHandle = () => {
-    console.log("Hello world");
+    console.log('Hello world');
   };
   const isDisabled = customButtonState === ECustomButtonState.DISABLED;
   const isHovered = customButtonState === ECustomButtonState.HOVERED;

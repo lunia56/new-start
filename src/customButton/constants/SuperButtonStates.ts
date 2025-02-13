@@ -1,9 +1,9 @@
 export enum EButtonTheme {
-  WHITE = "white",
-  BLACK = "black",
+  WHITE = 'white',
+  BLACK = 'black',
 }
 export enum ECustomButtonState {
-  NORMAL = "normal",
-  HOVERED = "hovered",
-  DISABLED = "disabled",
+  NORMAL = 'normal',
+  HOVERED = 'hovered',
+  DISABLED = 'disabled',
 }
