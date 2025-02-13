@@ -1,5 +1,5 @@
-import "./App.css";
-import { CustomButton } from "./homeWork1/CustomButton.tsx";
+import './App.css';
+import { CustomButton } from './customButton/CustomButton.tsx';
 
 export const App = () => {
   return (
