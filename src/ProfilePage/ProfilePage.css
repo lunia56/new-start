@@ -1,0 +1,124 @@
+.profilePage {
+  width: 375px;
+  height: 812px;
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.profilePage__header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 16px;
+}
+.profilePage__header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to bottom, #0000001a, #00000000);
+}
+.profilePage__back-button {
+  background: none;
+  color: #505050;
+  font-size: 14px;
+  cursor: pointer;
+}
+.profilePage__title {
+  font-size: 16px;
+  color: #505050;
+}
+
+.profilePage__avatar-block {
+  margin-top: 20px;
+}
+.profilePage__avatar-container {
+  position: relative;
+  display: inline-block;
+}
+.profilePage__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+}
+
+.profilePage__avatar-edit {
+  position: absolute;
+  right: -15px;
+  bottom: 25px;
+  background: #c571f8;
+  border: none;
+  color: white;
+  border-radius: 15%;
+  width: 24px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profilePage__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilePage__name {
+  font-size: 16px;
+  color: #505050;
+  margin: 0;
+}
+
+.profilePage__description {
+  font-size: 14px;
+  color: #666;
+	width: 80%;
+  margin: 0;
+}
+
+.profilePage__menu {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.profilePage__menu-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  font-size: 14px;
+}
+
+.profilePage__menu-icon {
+  padding-top: 5px;
+  margin-right: 12px;
+  font-size: 17px;
+}
+
+.profilePage__logout {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  background: #e57373;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+.profilePage__logout::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 5px;
+  box-shadow: 0 4px 10px #e57373;
+  border-radius: 4px;
+}
