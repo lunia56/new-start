@@ -35,8 +35,10 @@ export const CustomButton = () => {
     );
   };
   return (
-    <>
-      <div className={cnApp('superButton')}>
+    <div className={cnApp('superButton')}>
+      <div
+      // className={cnApp('superButton')}
+      >
         <SuperButton
           title={buttonTitle}
           theme={theme}
@@ -72,6 +74,6 @@ export const CustomButton = () => {
           </select>
         </div>
       </div>
-    </>
+    </div>
   );
 };
