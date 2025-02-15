@@ -1,83 +1,86 @@
 .button {
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border 0.3s;
 }
 
 /* Темные кнопки */
 .button_theme_black {
-    background-color: #ffffff;
-    color: black;
-    border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #ffffff;
 }
 
 .button_theme_black:hover,
 .button_theme_black.button_isHovered {
-    background-color: #b8b7b7;
+  background-color: #b8b7b7;
 }
 
 /* Второстепенные кнопки (secondary) */
 .button_theme_black.button_isSecondary {
-    background-color: #161616;
-    color: #f3f3f3;
-    border: 1px solid #ffffff;
+  background-color: #161616;
+  color: #f3f3f3;
+  border: 1px solid #ffffff;
 }
 
 .button_theme_black.button_isSecondary:hover,
 .button_theme_black.button_isSecondary.button_isHovered {
-    background-color: #ffffff33;
+  background-color: #ffffff33;
 }
 
 .button_theme_black.button_isSecondary.button_isDisabled {
-    background-color: #161616;
-    color: #5f5f5f;
-    border: 1px solid #5f5f5f;
-    cursor: not-allowed;
+  background-color: #161616;
+  color: #5f5f5f;
+  border: 1px solid #5f5f5f;
+  cursor: not-allowed;
 }
 
 /* Светлые кнопки */
 .button_theme_white {
-    background-color: #000000;
-    color: white;
-    border: 1px solid #000000;
+  background-color: #000000;
+  color: white;
+  border: 1px solid #000000;
 }
 
 .button_theme_white:hover,
 .button_theme_white.button_isHovered {
-    background-color: #5f5f5f;
-    color: #ffffff;
-    border: 1px solid #5f5f5f;
+  background-color: #5f5f5f;
+  color: #ffffff;
+  border: 1px solid #5f5f5f;
 }
 
 /* Второстепенные кнопки (secondary) */
 .button_theme_white.button_isSecondary {
-    background-color: #ffffff;
-    color: #161616;
-    border: 1px solid #161616;
+  background-color: #ffffff;
+  color: #161616;
+  border: 1px solid #161616;
 }
 
 .button_theme_white.button_isSecondary:hover,
 .button_theme_white.button_isSecondary.button_isHovered {
-    background-color: #00000033;
-    color: #5f5f5f;
-    border: 1px solid #5f5f5f;
+  background-color: #00000033;
+  color: #5f5f5f;
+  border: 1px solid #5f5f5f;
 }
 
 .button_theme_white.button_isSecondary.button_isDisabled {
-    background-color: #f4f3f3;
-    color: #a0a0a0;
-    border: 1px solid #d0d0d0;
-    cursor: not-allowed;
+  background-color: #f4f3f3;
+  color: #a0a0a0;
+  border: 1px solid #d0d0d0;
+  cursor: not-allowed;
 }
 
 /* Disabled */
 .button_isDisabled,
 .button_theme_white.button_isDisabled {
-    background-color: #f4f3f3;
-    color: #a0a0a0;
-    border: 1px solid #d0d0d0;
-    cursor: not-allowed;
+  background-color: #f4f3f3;
+  color: #a0a0a0;
+  border: 1px solid #d0d0d0;
+  cursor: not-allowed;
 }

@@ -1,0 +1,191 @@
+.profilePage {
+  /* Размеры */
+  width: 375px;
+  height: 812px;
+  
+  /* Цвета и фон */
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+  
+  /* Блочная модель */
+  display: flex;
+  flex-direction: column;
+}
+
+.profilePage__header {
+  /* Позиционирование */
+  position: relative;
+  width: 100%;
+  
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 16px;
+}
+
+.profilePage__header::after {
+  /* Визуальные эффекты */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to bottom, #0000001a, #00000000);
+}
+
+.profilePage__back-button {
+  /* Цвета и фон */
+  background: none;
+  color: #505050;
+  
+  /* Текст */
+  font-size: 14px;
+  
+  /* Прочее */
+  cursor: pointer;
+}
+
+.profilePage__title {
+  /* Текст */
+  font-size: 16px;
+  color: #505050;
+}
+
+.profilePage__avatar-block {
+  /* Отступы */
+  margin-top: 20px;
+}
+
+.profilePage__avatar-container {
+  /* Позиционирование */
+  position: relative;
+  
+  /* Блочная модель */
+  display: inline-block;
+}
+
+.profilePage__avatar {
+  /* Размеры */
+  width: 150px;
+  height: 150px;
+  
+  /* Форма */
+  border-radius: 20px;
+}
+
+.profilePage__avatar-edit {
+  /* Позиционирование */
+  position: absolute;
+  right: -15px;
+  bottom: 25px;
+  
+  /* Цвета и фон */
+  background: #c571f8;
+  color: white;
+  
+  /* Размеры и форма */
+  border: none;
+  border-radius: 5px;
+  width: 24px;
+  height: 34px;
+  
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Прочее */
+  cursor: pointer;
+}
+
+.profilePage__info {
+  /* Блочная модель */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilePage__name {
+  /* Текст */
+  font-size: 16px;
+  color: #505050;
+  
+  /* Отступы */
+  margin: 0;
+}
+
+.profilePage__description {
+  /* Текст */
+  font-size: 14px;
+  color: #666;
+  
+  /* Блочная модель */
+  width: 80%;
+  
+  /* Отступы */
+  margin: 0;
+}
+
+.profilePage__menu {
+  /* Размеры */
+  width: 100%;
+  
+  /* Отступы */
+  margin-top: 20px;
+}
+
+.profilePage__menu-item {
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  
+  /* Текст */
+  font-size: 14px;
+}
+
+.profilePage__menu-icon {
+  /* Отступы */
+  padding-top: 5px;
+  margin-right: 12px;
+  
+  /* Размеры */
+  font-size: 17px;
+}
+
+.profilePage__logout {
+  /* Позиционирование */
+  position: relative;
+  margin: auto;
+  
+  /* Размеры */
+  width: 80%;
+  
+  /* Цвета и фон */
+  background: #e57373;
+  color: white;
+  
+  /* Текст */
+  font-size: 16px;
+  
+  /* Отступы и блочная модель */
+  border: none;
+  padding: 12px;
+  
+  /* Прочее */
+  cursor: pointer;
+}
+
+.profilePage__logout::after {
+  /* Визуальные эффекты */
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 5px;
+  box-shadow: 0 4px 10px #e57373;
+  border-radius: 10px;
+}
