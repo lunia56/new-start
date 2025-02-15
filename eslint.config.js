@@ -33,11 +33,7 @@ export default tseslint.config(
         },
       ],
       'jsx-quotes': ['error', 'prefer-double'],
-      'padding-line-between-statements': [
-        'error',
-        { blankLine: 'always', prev: 'block', next: 'block' },
-      ],
-      "eol-last": ["error", "always"]
+      'eol-last': ['error', 'always'],
     },
   },
 );

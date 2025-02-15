@@ -1,31 +1,11 @@
-import type { ReactNode } from 'react';
+import { menuItems } from './constants/ProfilePageConstants.tsx';
 import { cnProfilePage } from './ProfilePage.classname.ts';
 import '../ProfilePage/ProfilePage.css';
 import { MdArrowBackIosNew } from 'react-icons/md';
 import { CiEdit } from 'react-icons/ci';
-import { FiKey } from 'react-icons/fi';
-import { BsChatLeftDots } from 'react-icons/bs';
-import { RiNotification3Line } from 'react-icons/ri';
-import { GrStorage } from 'react-icons/gr';
-import { MdOutlineLiveHelp } from 'react-icons/md';
-import { IoMdPersonAdd } from 'react-icons/io';
 import avatar from '../assets/profilePhoto.png';
 
-type TMenuItem = {
-  label: string;
-  icon: ReactNode;
-};
-
 export const ProfilePage = () => {
-  const menuItems: TMenuItem[] = [
-    { label: 'Account', icon: <FiKey /> },
-    { label: 'Chat Settings', icon: <BsChatLeftDots /> },
-    { label: 'Notifications', icon: <RiNotification3Line /> },
-    { label: 'Storage', icon: <GrStorage /> },
-    { label: 'Help', icon: <MdOutlineLiveHelp /> },
-    { label: 'Invite a friend', icon: <IoMdPersonAdd /> },
-  ];
-
   return (
     <div>
       <header className={cnProfilePage('header')}>
